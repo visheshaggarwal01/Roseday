@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Rose Garden</title>
+    <style>
+        body {
+            background: url('flower_garden.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        h1 {
+            color: #800000; /* Dark Maroon */
+        }
+        .garden {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .rose {
+            position: absolute;
+            width: 80px;
+            cursor: pointer;
+        }
+        .message {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Love, Welcome to Your Virtual Rose Garden</h1>
+    <div class="garden">
+        <img src="rose_icon.png" class="rose" style="top: 20%; left: 15%;" onmouseover="showMessage(0)" onmouseout="hideMessage(0)">
+        <div class="message" style="top: 25%; left: 15%;" id="msg0">Lamho-Lamho Per Khwab Likhunga<br> Apne Pyar Per Kitaab Likhunga<br> Aapki Gale Ko Phool Ki Tehni (stem) <br> Aur Aapke Chehre Ko Gulab Likhunga… 🌹</div>
+
+        <img src="rose_icon.png" class="rose" style="top: 35%; left: 30%;" onmouseover="showMessage(1)" onmouseout="hideMessage(1)">
+        <div class="message" style="top: 40%; left: 30%;" id="msg1">How could I let your valentine go without giving you a rose,<br> especially when I know how much You love flowers.</div>
+        
+        <img src="rose_icon.png" class="rose" style="top: 50%; left: 50%;" onmouseover="showMessage(2)" onmouseout="hideMessage(2)">
+        <div class="message" style="top: 55%; left: 50%;" id="msg2">I know these websites are getting very outdated and they dont look good also<br> but hey it was either this or having to explain a rose to dad.</div>
+        
+        <img src="rose_icon.png" class="rose" style="top: 65%; left: 70%;" onmouseover="showMessage(3)" onmouseout="hideMessage(3)">
+        <div class="message" style="top: 70%; left: 70%;" id="msg3">I miss you so much, and I am counting the days I have to meet you again.<br> I love you so much, and I can't wait to hold you in my arms again.</div>
+        
+        <img src="rose_icon.png" class="rose" style="top: 75%; left: 40%;" onmouseover="showMessage(4)" onmouseout="hideMessage(4)">
+        <div class="message" style="top: 80%; left: 40%;" id="msg4">Doing this reminded me of when I made paper roses for you,<br> I still very vividly remember the cute smile on your face that wouldn't go away,<br> and how surpirsed you were to see it. I hope this made you smile the same way hehehe.</div>
+        
+        <img src="rose_icon.png" class="rose" style="top: 85%; left: 20%;" onmouseover="showMessage(5)" onmouseout="hideMessage(5)">
+        <div class="message" style="top: 90%; left: 20%;" id="msg5">I love you, Happy Rose day My love and may your life bloom like you make my heart bloom.<br> I am sorry for everytime you have had to doubt wether you deserve to be loved the same way you loved me,<br> this is just a small part of my efforts to show you that you deserve it and so much more. I love you.</div>
+    </div>
+
+    <script>
+        function showMessage(index) {
+            document.getElementById('msg' + index).style.display = 'block';
+        }
+        function hideMessage(index) {
+            document.getElementById('msg' + index).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
